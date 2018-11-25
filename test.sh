@@ -42,5 +42,12 @@ node bin/eckles.js id_rsa.pub > /dev/null
 echo "PASS"
 
 echo ""
+echo "Create CSR"
+node bin/eckles.js csr ./privkey.2.sec1.pem example.com,example.net >/dev/null
+node bin/eckles.js csr ./privkey.3.pkcs8.pem whatever.com,api.whatever.com,whatever.net >/dev/null
+node bin/eckles.js csr ./privkey.1.jwk.json example.com,example.net >/dev/null
+echo "PASS"
+
+echo ""
 echo ""
 echo "Passed all tests"

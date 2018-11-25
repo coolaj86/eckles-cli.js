@@ -54,11 +54,13 @@ try {
 
 
 if ('csr' === infile) {
+  // TODO this _should_ use JWK,
+  // but it doesn't yet
+  if ('string' !== typeof key) {
+    key = Eckles.exportSync({ jwk: key });
+  }
   return ecdsacsr({
-    // don't remember which it was... whatever
-    pem: key
-  , key: key
-  , jwk: key
+    key: key
   , domains: domains.split(/,/)
   }).then(function (csr) {
     console.info(csr);

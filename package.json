@@ -1,7 +1,7 @@
 {
   "name": "eckles-cli",
-  "version": "1.0.1",
-  "description": "Command line ECDSA tools to generating key pairs and converting between JWK, various PEM formats, and SSH",
+  "version": "1.1.0",
+  "description": "💯 Command line ECDSA tools to generating key pairs and converting between JWK, various PEM formats, and SSH",
   "homepage": "https://git.coolaj86.com/coolaj86/eckles-cli.js",
   "main": "bin/eckles.js",
   "bin": {

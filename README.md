@@ -2,10 +2,11 @@
 =========
 
 Sponsored by [Root](https://therootcompany.com).
-Built for [ACME.js](https://git.coolaj86.com/coolaj86/acme.js)
-and [Greenlock.js](https://git.coolaj86.com/coolaj86/greenlock.js)
+Built with [Eckles.js](https://git.coolaj86.com/coolaj86/eckles.js).
 
 ECDSA (elliptic curve) tools.
+
+Designed for testing and debugging.
 
 ## Install
 
@@ -20,6 +21,7 @@ Table of Contents
 * [x] PEM to JWK
 * [x] JWK to PEM
 * [x] SSH "pub" format
+* [x] Generate CSR (via [ECDSA-CSR.js](https://git.coolaj86.com/coolaj86/ecdsa-csr.js))
 * [ ] RSA
   * **Need RSA tools?** Check out [Rasha.js](https://git.coolaj86.com/coolaj86/rasha.js)
 
@@ -152,6 +154,21 @@ eckles id_rsa.pub > pub.jwk.json
 
 eckles privkey.jwk.json spki > pub.pem
 ```
+
+## Generate CSR
+
+```
+eckles csr [keyfile] [domains]
+```
+
+```bash
+eckels csr privkey.pem example.com,www.example.com > csr.pem
+```
+
+```bash
+eckels csr privkey.jwk.json example.com,www.example.com > csr.pem
+```
+
 
 Legal
 -----
