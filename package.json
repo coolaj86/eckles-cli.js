@@ -1,0 +1,43 @@
+{
+  "name": "eckles-cli",
+  "version": "1.0.1",
+  "description": "Command line ECDSA tools to generating key pairs and converting between JWK, various PEM formats, and SSH",
+  "homepage": "https://git.coolaj86.com/coolaj86/eckles-cli.js",
+  "main": "bin/eckles.js",
+  "bin": {
+    "eckles": "bin/eckles.js"
+  },
+  "files": [
+    "bin",
+    "fixtures",
+    "lib",
+    "test.sh"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "postinstall": "node lib/telemetry.js event:install",
+    "test": "bash test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.coolaj86.com/coolaj86/eckles-cli.js"
+  },
+  "keywords": [
+    "EC",
+    "ECDSA",
+    "PEM",
+    "JWK",
+    "SSH",
+    "tested",
+    "working",
+    "complete"
+  ],
+  "author": "AJ ONeal <coolaj86@gmail.com> (https://coolaj86.com/)",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "ecdsa-csr": "^1.1.1",
+    "eckles": "^1.3.2"
+  }
+}
