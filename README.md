@@ -1,3 +1,8 @@
+Mirror of Eckles CLI
+====================
+
+Official Repository: <https://git.coolaj86.com/coolaj86/eckles-cli.js>
+
 [Eckles CLI](https://git.coolaj86.com/coolaj86/eckles-cli.js)
 =========
 
